@@ -1,0 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin: 0;
+}
+
+.main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.button {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 17px;
+  font-weight: 900;
+  background-color: #000000;
+  border: 1px solid rgb(9, 231, 194);
+  border-radius: 7px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ################ Styles for columns ################# */
+
+.column {
+  width: 7.33%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-2 {
+  width: 15.67%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-3 {
+  width: 24%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-4 {
+  width: 32.33%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-5 {
+  width: 40.67%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-6 {
+  width: 49%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-7 {
+  width: 57.33%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-8 {
+  width: 65.67%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-9 {
+  width: 74%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-10 {
+  width: 82.33%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-11 {
+  width: 90.67%;
+  height: inherit;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.column-12 {
+  width: 100%;
+  height: inherit;
+}
+
+.columns {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.is-centered {
+  align-self: center;
+  justify-content: center;
+}
+
+/* ############ Styles for forms ############# */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+
+  .label {
+    font-weight: 900;
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+  }
+
+  .input {
+    width: 100%;
+    height: 4vh;
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 5px;
+    font-size: 25px;
+    padding-left: 0.5%;
+  }
+
+  .submit {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: rgb(9, 231, 194);
+    border: 1px solid rgb(9, 231, 194);
+    border-radius: 7px;
+    color: white;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* ####### Styles for card ######## */
+
+.card {
+  width: 94%;
+  display: flex;
+  border: 1px solid rgb(226, 222, 222);
+  padding-bottom: 3%;
+  padding-right: 3%;
+  box-shadow: 5px 10px rgb(233, 232, 232);
+
+  .aside {
+    background-color: rgb(118, 233, 204);
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* ######### Nav bar styles ######### */
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  height: 70px;
+  background-color: rgb(118, 233, 204);
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+
+  .checkbox,
+  .checkbox-lab {
+    display: none;
+  }
+
+  .nav-start {
+    grid-column: 1 / span 1;
+    padding: 0;
+    margin-top: 23px;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    p::after {
+      content: '';
+      height: 3px;
+      width: 45%;
+      display: block;
+      background-color: ivory;
+    }
+  }
+
+  .mid-nav {
+    grid-column: 2 / span 1;
+    margin: 0;
+    margin-top: 23px;
+
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .nav-end {
+    grid-column: 3 / span 1;
+    margin-top: 23px;
+  }
+}
