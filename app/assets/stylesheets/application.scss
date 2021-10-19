@@ -218,9 +218,12 @@ form {
   box-shadow: 5px 10px rgb(233, 232, 232);
 
   .aside {
-    background-color: rgb(118, 233, 204);
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
     font-family: 'Times New Roman', Times, serif;
   }
 
@@ -309,5 +312,51 @@ form {
   }
 }
 
+table {
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  background: #012b39;
+  border: 1px solid rgb(133, 102, 102);
+  border-radius: 10px;
+  border-collapse: collapse;
+
+  tr {
+    th {
+      width: inherit;
+      // background-color: #000a0e;
+      color: #e2b842;
+      font-weight: 900;
+      font-size: 19px;
+      padding: 0.75em 1em;
+      text-align: center;
+    }
+
+    td {
+      color: #fff;
+      padding: 0.65em 1em;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #e4a9a9;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    &:hover {
+      background-color: #012b39;
+      color: #000000 !important;
+    }
+  }
+
+  tbody tr:nth-child(even) {
+    &:hover {
+      background-color: #e4a9a9;
+      transition: all 0.1s ease-in-out;
+      color: #e4a9a9;
+    }
+  }
+}
+
 @import url('./margins&paddings.scss');
 @import url('./texts&backgrounds.scss');
+@import url('./heights.scss');
