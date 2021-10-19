@@ -18,6 +18,36 @@ body {
   margin: 0;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.has-text-centered {
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+
+.is-fullwidth {
+  width: inherit;
+}
+
+.submit {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 17px;
+  font-weight: 900;
+  background-color: rgb(9, 231, 194);
+  border: 1px solid rgb(9, 231, 194);
+  border-radius: 7px;
+  color: white;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
 .main {
   margin-left: 5%;
   margin-right: 5%;
@@ -158,18 +188,22 @@ form {
     padding-left: 0.5%;
   }
 
-  .submit {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    font-size: 17px;
-    font-weight: 900;
-    background-color: rgb(9, 231, 194);
-    border: 1px solid rgb(9, 231, 194);
-    border-radius: 7px;
-    color: white;
-    margin-bottom: 1.2rem;
+  .actions {
+    width: 100%;
+
+    .submit {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+      font-size: 17px;
+      font-weight: 900;
+      background-color: rgb(9, 231, 194);
+      border: 1px solid rgb(9, 231, 194);
+      border-radius: 7px;
+      color: white;
+      margin-bottom: 1.2rem;
+    }
   }
 }
 
@@ -193,16 +227,20 @@ form {
   .body {
     display: flex;
     flex-direction: column;
-  }
 
-  .card-header {
-    font-weight: 900;
-    text-align: center;
-  }
+    .card-header {
+      font-weight: 900;
+      text-align: center;
+    }
 
-  .card-footer {
-    display: flex;
-    justify-content: space-evenly;
+    .card-content {
+      width: 100%;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 }
 
@@ -270,3 +308,6 @@ form {
     margin-top: 23px;
   }
 }
+
+@import url('./margins&paddings.scss');
+@import url('./texts&backgrounds.scss');

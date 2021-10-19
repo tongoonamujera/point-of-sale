@@ -35,12 +35,15 @@
             </div>
 
             <div class="actions">
-              <%= f.submit "Sign up" %>
+              <%= f.submit "Sign up", class:"submit is-fullwidth" %>
             </div>
           <% end %>
+          <div class="field has-text-centered">
+            <span class="has-text-centered">OR</span>
+          </div>
         </div>
-        <div class="card-footer">
-          <%= render "devise/shared/links" %>
+        <div class="card-footer flex-col">
+          <%= render "devise/shared/links", class:"is-fullwidth" %>
         </div>
       </div>
     </div>
