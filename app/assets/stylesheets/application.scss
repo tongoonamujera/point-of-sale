@@ -148,6 +148,7 @@ form {
   width: 94%;
   display: flex;
   border: 1px solid rgb(226, 222, 222);
+  border-radius: 20px;
   padding-bottom: 3%;
   padding-right: 3%;
   box-shadow: 5px 10px rgb(233, 232, 232);
@@ -158,6 +159,8 @@ form {
     align-items: center;
     margin-left: 0;
     padding-left: 0;
+    border: inherit;
+    border-top-left-radius: inherit;
     font-family: 'Times New Roman', Times, serif;
 
     .aside-header {
@@ -165,6 +168,7 @@ form {
     }
 
     .aside-body {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -265,7 +269,7 @@ table {
   background: #012b39;
   border: 1px solid rgb(133, 102, 102);
   border-radius: 10px;
-  border-collapse: collapse;
+  box-shadow: 10px 15px rgb(233, 232, 232);
 
   tr {
     th {
