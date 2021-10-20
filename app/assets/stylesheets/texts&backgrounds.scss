@@ -46,6 +46,26 @@
   color: #0000ff;
 }
 
+.shadow-red {
+  text-shadow: 2px 2px #ff0000;
+}
+
+.shadow-blue {
+  text-shadow: 2px 2px #0000ff;
+}
+
+.shadow-white {
+  text-shadow: 2px 2px white;
+}
+
+.shadow-light {
+  text-shadow: 2px 2px rgb(223, 220, 220);
+}
+
+.shadow-dark {
+  text-shadow: 2px 2px #000;
+}
+
 .text-white {
   color: white;
   font-weight: 900;

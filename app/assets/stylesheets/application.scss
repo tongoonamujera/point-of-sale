@@ -105,6 +105,7 @@ form {
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
+  text-shadow: 2px 2px rgb(203, 203, 206);
 
   .label {
     font-weight: 900;
@@ -154,11 +155,23 @@ form {
   .aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     margin-left: 0;
     padding-left: 0;
     font-family: 'Times New Roman', Times, serif;
+
+    .aside-header {
+      margin-top: 0%;
+    }
+
+    .aside-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 10px;
+      padding-left: 0;
+    }
   }
 
   .body {
