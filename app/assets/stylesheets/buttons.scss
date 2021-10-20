@@ -1,0 +1,77 @@
+.btn {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 17px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  // border: 1px solid gray;
+  border-radius: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: gray;
+}
+
+.warning-outline {
+  border: 1px solid orange;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.success-outline {
+  border: 1px solid green;
+}
+
+.btn-primary {
+  background-color: rgb(8, 201, 235);
+  color: white;
+}
+
+.primary-outline {
+  border: 1px solid rgb(8, 201, 235);
+}
+
+
+.btn-light {
+  background-color: rgb(158, 154, 154);
+  color: white;
+}
+
+.light-outline {
+  border: 1px solid rgb(158, 154, 154);
+}
+
+.btn-dark {
+  background-color: rgb(13, 13, 14);
+  color: white;
+}
+
+.dark-outline {
+  border: 1px solid black;
+}
+
+.btn-danger {
+  background-color: rgb(243, 34, 7);
+  color: white;
+}
+
+.danger-outline {
+  border: 1px solid rgb(243, 34, 7);
+}
+
+.btn-pink {
+  background-color: rgb(217, 9, 245);
+  color: rgb(13, 13, 14);
+}
+
+.pink-outline {
+  border: 1px solid rgb(217, 9, 245);
+}

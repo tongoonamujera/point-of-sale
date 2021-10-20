@@ -270,7 +270,7 @@ table {
   background: #012b39;
   border: 1px solid rgb(133, 102, 102);
   border-radius: 10px;
-  box-shadow: 10px 15px rgb(233, 232, 232);
+  box-shadow: 5px 10px rgb(233, 232, 232);
 
   tr {
     th {
@@ -288,6 +288,11 @@ table {
       padding: 0.65em 1em;
       text-align: center;
       font-weight: 600;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 
@@ -312,3 +317,4 @@ table {
 @import url('./margins&paddings.scss');
 @import url('./texts&backgrounds.scss');
 @import url('./heights.scss');
+@import url('./buttons.scss');
