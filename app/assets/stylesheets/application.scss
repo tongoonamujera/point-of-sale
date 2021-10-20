@@ -68,86 +68,22 @@ body {
 
 /* ################ Styles for columns ################# */
 
-.column {
-  width: 7.33%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
+$column: 12;
 
-.column-2 {
-  width: 15.67%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-3 {
-  width: 24%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-4 {
-  width: 32.33%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-5 {
-  width: 40.67%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-6 {
-  width: 49%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-7 {
-  width: 57.33%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-8 {
-  width: 65.67%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-9 {
-  width: 74%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-10 {
-  width: 82.33%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-11 {
-  width: 90.67%;
-  height: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-}
-
-.column-12 {
-  width: 100%;
-  height: inherit;
+@for $i from 1 through $column {
+  @if $column <= 11 {
+    .column-#{$i} {
+      width: (99% * ($i / $column));
+      height: inherit;
+      margin-right: 0.5%;
+      margin-left: 0.5%;
+    }
+  } @else {
+    .column-#{$i} {
+      width: (100% * ($i / $column));
+      height: inherit;
+    }
+  }
 }
 
 .columns {
