@@ -3,7 +3,7 @@ class WarehousesController < ApplicationController
 
   # GET /warehouses or /warehouses.json
   def index
-    @warehouses = Warehouse.all
+    @warehouses = Warehouse.order(created_at: :asc)
   end
 
   # GET /warehouses/1 or /warehouses/1.json

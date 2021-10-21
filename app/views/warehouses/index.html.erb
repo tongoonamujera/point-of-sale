@@ -43,10 +43,10 @@
         </div>
       </div>
     <% end %>
-  </div>
-  <div class="carousel-navigation">
-    <% @warehouses.each do |warehouse|%>
-      <label for="<%= warehouse.id %>" class="label-<%= warehouse.id %>"></label>
-    <% end %>
+    <div class="carousel-navigation">
+      <% @warehouses.each do |warehouse|%>
+        <label for="<%= warehouse.id %>" class="label-<%= warehouse.id %>"></label>
+      <% end %>
+    </div>
   </div>
 </div>
