@@ -48,8 +48,8 @@ body {
 }
 
 .main {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .button {
@@ -264,7 +264,7 @@ form {
   }
 }
 
-table {
+.table {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
   background: #012b39;
@@ -318,3 +318,4 @@ table {
 @import url('./texts&backgrounds.scss');
 @import url('./heights.scss');
 @import url('./buttons.scss');
+@import url('./carousel.scss');

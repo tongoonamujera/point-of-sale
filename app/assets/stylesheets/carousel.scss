@@ -1,0 +1,146 @@
+/* ########### carousel styles ############# */
+.container {
+  height: calc(100vh - 70px);
+  width: 100vw !important;
+  background: linear-gradient(to right, #cc99ff 0%, #ff9966 100%);
+  overflow: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0;
+  padding: 0;
+
+  .carousel-cards {
+    display: flex;
+    height: 100%;
+    $carousel: 100;
+    margin-top: 0;
+    padding: 0;
+
+    @for $i from 1 through $carousel {
+      .input-#{$i} {
+        display: none;
+      }
+
+      .input-#{$i}:checked ~ .carousel-#{$i} {
+        display: block;
+      }
+
+      .input-#{$i}:checked ~ .label-#{$i}::after {
+        background-color: yellow;
+      }
+    }
+
+    @for $i from 1 through $carousel {
+      .carousel-#{$i} {
+        margin-top: 10px;
+        background-color: rgb(92, 90, 90);
+        width: 30%;
+        height: calc(100% - 15%);
+        border: 1px solid gray;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 200px;
+
+        .carousel-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: inherit;
+          border-radius: inherit;
+
+          .carousel-header {
+            background-color: rgb(201, 73, 190);
+            align-self: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            width: 100%;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 2px 2px rgb(114, 116, 138);
+            letter-spacing: 1.5px;
+            font-weight: 900;
+          }
+
+          .carousel-body {
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+
+            table {
+              width: 85%;
+              background-color: rgb(194, 189, 189);
+              padding: 1rem 0.5rem 1rem 0.5rem;
+              border-radius: 7px;
+              margin: 0 auto 0 auto;
+
+              tr {
+                th {
+                  text-align: center;
+                }
+
+                td {
+                  text-align: center;
+                }
+              }
+            }
+          }
+
+          .carousel-footer {
+            align-self: center;
+            justify-content: center;
+            transform: translate(0, 300%);
+          }
+
+          .last-elem {
+            background-color: orange;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            border-radius: 10px;
+            transform: translate(0, 150%);
+
+            a {
+              text-decoration: none;
+              color: rgb(250, 246, 246);
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    height: 25px;
+    position: absolute;
+    bottom: 5%;
+    $label: 100;
+
+    @for $i from 1 through $label {
+      .label-#{$i}::after {
+        content: '';
+        display: block;
+        height: 10px;
+        width: 90px;
+        background-color: white;
+      }
+
+      .label-#{$i}:hover::after {
+        background-color: yellow;
+      }
+    }
+  }
+}
