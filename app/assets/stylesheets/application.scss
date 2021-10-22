@@ -224,15 +224,22 @@ form {
       padding: 0;
       margin: 0 0 0 20px;
       width: fit-content;
+      text-shadow: 2px 2px rgb(189, 186, 186);
+      font-weight: 900;
     }
 
-    p:hover::after {
+    p::after {
       content: '';
       height: 7px;
-      width: 100%;
+      width: 0;
       display: block;
       background-color: ivory;
       border-radius: 2px;
+    }
+
+    p:hover::after {
+      width: 100%;
+      transition: width 0.4s ease-in-out;
     }
   }
 
