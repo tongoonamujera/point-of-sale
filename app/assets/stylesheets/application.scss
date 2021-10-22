@@ -222,16 +222,17 @@ form {
 
     p {
       padding: 0;
-      margin: 0;
+      margin: 0 0 0 20px;
       width: fit-content;
     }
 
     p:hover::after {
       content: '';
-      height: 3px;
+      height: 7px;
       width: 100%;
       display: block;
       background-color: ivory;
+      border-radius: 2px;
     }
   }
 
@@ -248,8 +249,9 @@ form {
       li {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 0 auto 0 auto;
         font-family: 'Times New Roman', Times, serif;
+        width: fit-content;
 
         a {
           text-decoration: none;
@@ -259,9 +261,10 @@ form {
 
         a:hover::after {
           content: '';
-          height: 5px;
+          height: 7px;
           background-color: aliceblue;
           display: block;
+          border-radius: 2px;
         }
       }
     }
