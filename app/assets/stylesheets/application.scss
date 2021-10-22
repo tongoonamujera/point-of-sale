@@ -223,12 +223,13 @@ form {
     p {
       padding: 0;
       margin: 0;
+      width: fit-content;
     }
 
-    p::after {
+    p:hover::after {
       content: '';
       height: 3px;
-      width: 45%;
+      width: 100%;
       display: block;
       background-color: ivory;
     }
@@ -253,6 +254,14 @@ form {
         a {
           text-decoration: none;
           color: black;
+          width: fit-content;
+        }
+
+        a:hover::after {
+          content: '';
+          height: 5px;
+          background-color: aliceblue;
+          display: block;
         }
       }
     }
