@@ -53,10 +53,7 @@ body {
 }
 
 .button {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
   font-size: 17px;
   font-weight: 900;
   background-color: #000000;
@@ -75,8 +72,7 @@ $column: 12;
     .column-#{$i} {
       width: (99% * ($i / $column));
       height: inherit;
-      margin-right: 0.5%;
-      margin-left: 0.5%;
+      margin-right: 0 0.5% 0 0.5%;
     }
   } @else {
     .column-#{$i} {
@@ -128,10 +124,7 @@ form {
     width: 100%;
 
     .submit {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
+      padding: 0.7rem 2.5rem 0.7rem 2.5rem;
       font-size: 17px;
       font-weight: 900;
       border: 1px solid rgb(9, 231, 194);
@@ -149,8 +142,7 @@ form {
   display: flex;
   border: 1px solid rgb(226, 222, 222);
   border-radius: 20px;
-  padding-bottom: 3%;
-  padding-right: 3%;
+  padding: 0 3% 3% 0;
   box-shadow: 5px 10px rgb(233, 232, 232);
 
   .aside {
@@ -205,8 +197,8 @@ form {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   height: 70px;
-  background-color: rgb(118, 233, 204);
   width: 100%;
+  background-color: rgb(118, 233, 204);
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 
@@ -218,7 +210,7 @@ form {
   .nav-start {
     grid-column: 1 / span 1;
     padding: 0;
-    margin-top: 23px;
+    margin: 23px 0 0 0;
 
     p {
       padding: 0;
@@ -264,6 +256,8 @@ form {
           text-decoration: none;
           color: black;
           width: fit-content;
+          font-weight: 900;
+          text-shadow: 2px 2px rgb(211, 210, 210);
         }
 
         a:hover::after {

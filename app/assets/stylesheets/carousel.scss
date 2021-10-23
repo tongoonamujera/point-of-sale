@@ -44,6 +44,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 200px;
+        position: relative;
 
         .carousel-container {
           display: flex;
@@ -51,6 +52,7 @@
           justify-content: space-between;
           height: inherit;
           border-radius: inherit;
+          width: 100%;
 
           .carousel-header {
             background-color: rgb(201, 73, 190);
@@ -73,6 +75,8 @@
             align-self: center;
             justify-content: center;
             width: 100%;
+            position: absolute;
+            top: 30%;
 
             table {
               width: 85%;
@@ -96,18 +100,20 @@
           .carousel-footer {
             align-self: center;
             justify-content: center;
-            transform: translate(0, 300%);
+            position: absolute;
+            bottom: 20%;
           }
 
           .last-elem {
             background-color: orange;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin: 0 10% 0 10%;
             text-align: center;
             padding-top: 0.7rem;
             padding-bottom: 0.7rem;
             border-radius: 10px;
-            transform: translate(0, 150%);
+            position: absolute;
+            bottom: 3%;
+            width: calc(100% - 20%);
 
             a {
               text-decoration: none;
