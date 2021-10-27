@@ -34,7 +34,8 @@
     transform: translate(200%, 0);
   }
 
-  .radio-btn1:checked ~ .second-label {
+  .radio-btn1:checked ~ .second-label,
+  .radio-btn:checked ~ .first-label {
     background-color: orange;
   }
 

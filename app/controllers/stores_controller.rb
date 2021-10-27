@@ -1,5 +1,7 @@
 class StoresController < ApplicationController
   before_action :set_store, only: %i[ show edit update destroy ]
+  include ApplicationHelper
+  before_action :check_user, only: %i[index show edit update destroy ]
 
   # GET /stores or /stores.json
   def index

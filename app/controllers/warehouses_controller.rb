@@ -1,5 +1,7 @@
 class WarehousesController < ApplicationController
   before_action :set_warehouse, only: %i[ show edit update destroy ]
+  include ApplicationHelper
+  before_action :check_user, only: %i[new show edit update destroy ]
 
   # GET /warehouses or /warehouses.json
   def index
