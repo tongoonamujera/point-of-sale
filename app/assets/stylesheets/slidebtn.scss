@@ -32,14 +32,17 @@
 
   .radio-btn:checked ~ .first-label > span {
     transform: translate(200%, 0);
+    transition: transform 0.1s ease;
   }
 
   .radio-btn1:checked ~ .second-label,
   .radio-btn:checked ~ .first-label {
     background-color: orange;
+    transition: background-color 0.1s ease;
   }
 
   .radio-btn1:checked ~ .second-label > span {
     transform: translate(200%, 0);
+    transition: transform 0.1s ease;
   }
 }

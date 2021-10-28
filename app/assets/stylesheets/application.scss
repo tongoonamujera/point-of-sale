@@ -484,6 +484,10 @@ form {
   }
 }
 
+.img-rounded {
+  border-radius: 50%;
+}
+
 @import url('./margins&paddings.scss');
 @import url('./texts&backgrounds.scss');
 @import url('./heights.scss');
