@@ -11,6 +11,7 @@ gem 'rails', '~> 6.0.4', '>= 6.0.4.1'
 gem 'devise', '~> 4.8'
 gem 'chartkick', '~> 4.0', '>= 4.0.5'
 gem 'pg', '~> 1.2', '>= 1.2.3'
+gem 'scss_ninja', '~> 0.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets

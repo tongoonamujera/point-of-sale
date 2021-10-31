@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.has-text-centered {
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+
+.is-fullwidth {
+  width: inherit;
+}
+
+.submit {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 17px;
+  font-weight: 900;
+  border: 1px solid rgb(9, 231, 194);
+  border-radius: 7px;
+  color: white;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main {
+  margin: 0;
+}
+
+.button {
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  font-size: 17px;
+  font-weight: 900;
+  background-color: #000000;
+  border: 1px solid rgb(9, 231, 194);
+  border-radius: 7px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ################ Styles for columns ################# */
+
+$column: 12;
+
+@for $i from 1 through $column {
+  @if $column <= 11 {
+    .column-#{$i} {
+      width: (99% * ($i / $column));
+      height: inherit;
+      margin-right: 0 0.5% 0 0.5%;
+    }
+  } @else {
+    .column-#{$i} {
+      width: (100% * ($i / $column));
+      height: inherit;
+    }
+  }
+}
+
+.columns {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.is-centered {
+  align-self: center;
+  justify-content: center;
+}
