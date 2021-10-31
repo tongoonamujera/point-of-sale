@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
 }
 
 .flex-col {
@@ -75,4 +78,155 @@ $column: 12;
 .is-centered {
   align-self: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+  $column: 12;
+
+  @for $i from 1 through $column {
+    @if $column <= 11 {
+      .m-column-#{$i} {
+        width: (99% * ($i / $column));
+        height: inherit;
+        margin-right: 0 0.5% 0 0.5%;
+      }
+    } @else {
+      .m-column-#{$i} {
+        width: (100% * ($i / $column));
+        height: inherit;
+      }
+    }
+  }
+
+  .columns {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .is-centered {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and(min-width: 577px) and (max-width: 768px) {
+  $column: 12;
+
+  @for $i from 1 through $column {
+    @if $column <= 11 {
+      .lm-column-#{$i} {
+        width: (99% * ($i / $column));
+        height: inherit;
+        margin-right: 0 0.5% 0 0.5%;
+      }
+    } @else {
+      .lm-column-#{$i} {
+        width: (100% * ($i / $column));
+        height: inherit;
+      }
+    }
+  }
+
+  .columns {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .is-centered {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and(min-width: 769px) and (max-width: 992px) {
+  $column: 12;
+
+  @for $i from 1 through $column {
+    @if $column <= 11 {
+      .t-column-#{$i} {
+        width: (99% * ($i / $column));
+        height: inherit;
+        margin-right: 0 0.5% 0 0.5%;
+      }
+    } @else {
+      .t-column-#{$i} {
+        width: (100% * ($i / $column));
+        height: inherit;
+      }
+    }
+  }
+
+  .columns {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .is-centered {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and(min-width: 992px) and (max-width: 1200px) {
+  $column: 12;
+
+  @for $i from 1 through $column {
+    @if $column <= 11 {
+      .d-column-#{$i} {
+        width: (99% * ($i / $column));
+        height: inherit;
+        margin-right: 0 0.5% 0 0.5%;
+      }
+    } @else {
+      .d-column-#{$i} {
+        width: (100% * ($i / $column));
+        height: inherit;
+      }
+    }
+  }
+
+  .columns {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .is-centered {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  $column: 12;
+
+  @for $i from 1 through $column {
+    @if $column <= 11 {
+      .ld-column-#{$i} {
+        width: (99% * ($i / $column));
+        height: inherit;
+        margin-right: 0 0.5% 0 0.5%;
+      }
+    } @else {
+      .ld-column-#{$i} {
+        width: (100% * ($i / $column));
+        height: inherit;
+      }
+    }
+  }
+
+  .columns {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .is-centered {
+    align-self: center;
+    justify-content: center;
+  }
 }
