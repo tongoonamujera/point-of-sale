@@ -1,0 +1,43 @@
+@for $i from 1 through 5 {
+  @if $i == 5 {
+    .br-r {
+      border-radius: $i * 20%;
+    }
+
+    .bbrr-r {
+      border-bottom-right-radius: $i * 1rem;
+    }
+
+    .btrr-r {
+      border-top-right-radius: $i * 1rem;
+    }
+
+    .btlr-r {
+      border-top-right-radius: $i * 1rem;
+    }
+
+    .bblr-r {
+      border-top-right-radius: $i * 1rem;
+    }
+  } @else {
+    .br-#{$i} {
+      border-radius: $i * 1rem;
+    }
+
+    .bbrr-#{$i} {
+      border-bottom-right-radius: $i * 1rem;
+    }
+
+    .btrr-#{$i} {
+      border-top-right-radius: $i * 1rem;
+    }
+
+    .btlr-#{$i} {
+      border-top-right-radius: $i * 1rem;
+    }
+
+    .bblr-#{$i} {
+      border-top-right-radius: $i * 1rem;
+    }
+  }
+}
