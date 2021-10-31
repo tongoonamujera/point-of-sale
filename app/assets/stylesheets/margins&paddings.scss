@@ -5,33 +5,105 @@ $margin-bottom: 5;
 $margin-right: 5;
 $margin-left: 5;
 
-@for $i from 1 through $margin {
-  .m-#{$i} {
-    margin: $i * 1rem;
+.m-auto {
+  margin: auto auto auto auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@for $i from 0 through 5 {
+  @if $i == 0 {
+    .mx-#{$i} {
+      margin-left: $i;
+      margin-right: $i;
+    }
+  } @else {
+    .mx-#{$i} {
+      margin-left: $i 1rem;
+      margin-right: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $margin-top {
-  .mt-#{$i} {
-    margin-top: $i * 1rem;
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@for $i from 0 through 5 {
+  @if $i == 0 {
+    .my-#{$i} {
+      margin-top: $i;
+      margin-bottom: $i;
+    }
+  } @else {
+    .my-#{$i} {
+      margin-top: $i 1rem;
+      margin-bottom: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $margin-bottom {
-  .mb-#{$i} {
-    margin-bottom: $i * 1rem;
+@for $i from 0 through $margin {
+  @if $i == 0 {
+    .m-#{$i} {
+      margin: $i;
+    }
+  } @else {
+    .m-#{$i} {
+      margin: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $margin-right {
-  .mr-#{$i} {
-    margin-right: $i * 1rem;
+@for $i from 0 through $margin-top {
+  @if $i == 0 {
+    .mt-#{$i} {
+      margin: $i;
+    }
+  } @else {
+    .mt-#{$i} {
+      margin: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $margin-left {
-  .ml-#{$i} {
-    margin-left: $i * 1rem;
+@for $i from 0 through $margin-bottom {
+  @if $i == 0 {
+    .mb-#{$i} {
+      margin: $i;
+    }
+  } @else {
+    .mb-#{$i} {
+      margin: $i * 1rem;
+    }
+  }
+}
+
+@for $i from 0 through $margin-right {
+  @if $i == 0 {
+    .mr-#{$i} {
+      margin: $i;
+    }
+  } @else {
+    .mr-#{$i} {
+      margin: $i * 1rem;
+    }
+  }
+}
+
+@for $i from 0 through $margin-left {
+  @if $i == 0 {
+    .ml-#{$i} {
+      margin: $i;
+    }
+  } @else {
+    .ml-#{$i} {
+      margin: $i * 1rem;
+    }
   }
 }
 
@@ -43,32 +115,104 @@ $padding-bottom: 5;
 $padding-right: 5;
 $padding-left: 5;
 
-@for $i from 1 through $padding {
-  .p-#{$i} {
-    padding: $i * 1rem;
+.p-auto {
+  padding: auto auto auto auto;
+}
+
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+@for $i from 0 through 5 {
+  @if $i == 0 {
+    .px-#{$i} {
+      padding-left: $i;
+      padding-right: $i;
+    }
+  } @else {
+    .px-#{$i} {
+      padding-left: $i 1rem;
+      padding-right: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $padding-top {
-  .pt-#{$i} {
-    padding-top: $i * 1rem;
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+@for $i from 0 through 5 {
+  @if $i == 0 {
+    .py-#{$i} {
+      padding-top: $i;
+      padding-bottom: $i;
+    }
+  } @else {
+    .py-#{$i} {
+      padding-top: $i 1rem;
+      padding-bottom: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $padding-bottom {
-  .pb-#{$i} {
-    padding-bottom: $i * 1rem;
+@for $i from 0 through $padding {
+  @if $i == 0 {
+    .p-#{$i} {
+      padding: $i;
+    }
+  } @else {
+    .p-#{$i} {
+      padding: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $padding-right {
-  .pr-#{$i} {
-    padding-right: $i * 1rem;
+@for $i from 0 through $padding-top {
+  @if $i == 0 {
+    .pt-#{$i} {
+      padding-top: $i;
+    }
+  } @else {
+    .pt-#{$i} {
+      padding-top: $i * 1rem;
+    }
   }
 }
 
-@for $i from 1 through $padding-left {
-  .pl-#{$i} {
-    padding-left: $i * 1rem;
+@for $i from 0 through $padding-bottom {
+  @if $i == 0 {
+    .pb-#{$i} {
+      padding-bottom: $i;
+    }
+  } @else {
+    .pb-#{$i} {
+      padding-bottom: $i * 1rem;
+    }
+  }
+}
+
+@for $i from 0 through $padding-right {
+  @if $i == 0 {
+    .pr-#{$i} {
+      padding-right: $i;
+    }
+  } @else {
+    .pr-#{$i} {
+      padding-right: $i * 1rem;
+    }
+  }
+}
+
+@for $i from 0 through $padding-left {
+  @if $i == 0 {
+    .pl-#{$i} {
+      padding-left: $i;
+    }
+  } @else {
+    .pl-#{$i} {
+      padding-left: $i * 1rem;
+    }
   }
 }
