@@ -72,12 +72,11 @@ $column: 12;
 .columns {
   width: 100%;
   height: fit-content;
-  display: flex;
 }
 
 .is-centered {
-  align-self: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 576px) {
@@ -86,13 +85,13 @@ $column: 12;
   @for $i from 1 through $column {
     @if $column <= 11 {
       .m-column-#{$i} {
-        width: (99% * ($i / $column));
+        width: (99% * ($i / $column)) !important;
         height: inherit;
         margin-right: 0 0.5% 0 0.5%;
       }
     } @else {
       .m-column-#{$i} {
-        width: (100% * ($i / $column));
+        width: (100% * ($i / $column)) !important;
         height: inherit;
       }
     }
@@ -101,12 +100,11 @@ $column: 12;
   .columns {
     width: 100%;
     height: fit-content;
-    display: flex;
   }
 
   .is-centered {
-    align-self: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -132,12 +130,11 @@ $column: 12;
   .columns {
     width: 100%;
     height: fit-content;
-    display: flex;
   }
 
   .is-centered {
-    align-self: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -162,12 +159,11 @@ $column: 12;
   .columns {
     width: 100%;
     height: fit-content;
-    display: flex;
   }
 
   .is-centered {
-    align-self: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -192,12 +188,11 @@ $column: 12;
   .columns {
     width: 100%;
     height: fit-content;
-    display: flex;
   }
 
   .is-centered {
-    align-self: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -222,11 +217,10 @@ $column: 12;
   .columns {
     width: 100%;
     height: fit-content;
-    display: flex;
   }
 
   .is-centered {
-    align-self: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
