@@ -6,6 +6,7 @@ class StoresController < ApplicationController
   # GET /stores or /stores.json
   def index
     @stores = Store.all
+    @store = Store.new
   end
 
   # GET /stores/1 or /stores/1.json
@@ -14,7 +15,6 @@ class StoresController < ApplicationController
 
   # GET /stores/new
   def new
-    @store = Store.new
   end
 
   # GET /stores/1/edit
