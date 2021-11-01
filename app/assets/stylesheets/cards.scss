@@ -53,3 +53,67 @@
     }
   }
 }
+
+.cards {
+  width: 100%;
+  background-color: rgb(245, 238, 238);
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+
+  .card-header {
+    background-color: rgb(187, 184, 184);
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: auto;
+    height: 20%;
+    font-weight: 900;
+    box-shadow: 0 5px rgb(231, 229, 229);
+
+    .card-header-content {
+      width: fit-content;
+      height: 70%;
+      margin: auto auto auto auto;
+      transform: translateY(50%);
+    }
+  }
+
+  .card-body {
+    margin-left: 3%;
+    margin-right: 3%;
+    position: absolute;
+    top: 22%;
+    width: fit-content;
+    max-width: inherit;
+    height: 63%;
+    border-radius: inherit;
+    // background-color: rgb(120, 9, 134);
+
+    .card-body-content {
+      width: fit-content;
+      margin: auto auto auto auto;
+      text-align: center;
+      padding: 1%;
+    }
+  }
+
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    height: 13%;
+    width: 100%;
+    background-color: rgb(224, 222, 222);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: flex;
+    .card-footer-content {
+      width: auto;
+      margin: auto;
+      padding: 2% 1% 2% 1%;
+    }
+  }
+}
