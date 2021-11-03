@@ -378,3 +378,15 @@
 .grdx-pri-orn {
   background: linear-gradient(to right, #66ffcc 0%, #ff9933 71%);
 }
+
+.rrg-red-orn-grn {
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+.rrg-red-orn-pri {
+  background-image: repeating-radial-gradient(red, yellow 10%, cyan 15%);
+}
+
+.rrg-red-orn-pnk {
+  background-image: repeating-radial-gradient(red, yellow 10%, rgb(219, 8, 202) 15%);
+}
