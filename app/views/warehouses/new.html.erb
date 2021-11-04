@@ -1,12 +1,17 @@
-<div class="modal">
-  <input type="checkbox" name="modal-input" id="modal" class="input-modal">
-  <div class="modal-card mx-auto column-6 bg-red">
-  <label for="modal" class="modal-close"><span>X</span></label>
-    <div class="modal-card-header">Lorem ipsum dolor sit amet.</div>
-    <div class="modal-card-body bg-pri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptate earum dolorum ipsa deleniti nam saepe aut magni quam iusto.</div>
-    <div class="modal-card-footer"></div>
-  </div>
-  <div class="modal-control">
-    <label for="modal">XXXXXX</label>
+<div class="columns">
+  <div class="column-6 mx-auto">
+    <div class="card">
+      <div class="body w-10">
+        <div class="card-header">
+          <h1>New Warehouse</h1>
+        </div>
+        <div class="card-content">
+          <%= render 'form', warehouse: @warehouse %>
+        </div>
+        <div class="card-footer">
+          <%= link_to 'Back', warehouses_path, class:"btn btn-light" %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
