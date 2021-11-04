@@ -1,3 +1,21 @@
+<div class="columns">
+  <div class="column-6 mx-auto">
+    <div class="card">
+      <div class="body w-10">
+        <div class="card-header">
+          <h1>New Warehouse</h1>
+        </div>
+        <div class="card-content">
+          <%= render 'form', warehouse: @warehouse %>
+        </div>
+        <div class="card-footer">
+          <%= link_to 'Back', warehouses_path, class:"btn btn-light" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="pagination rrg-red-orn-grn">
     <input type="radio" name="radion" id="radio1" class="input-1">
